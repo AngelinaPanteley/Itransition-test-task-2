@@ -1,0 +1,79 @@
+.form {
+  font-family: $base-font;
+
+  &__link {
+    font-size: 14px;
+    line-height: 25px;
+    color: rgb(24,129,173);
+    font-family: $base-font;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    display: inline-block;
+
+    &:after {
+      content: "";
+      display: inline-block;
+      height: 13px;
+      width: 1px;
+      background-color: rgb(24,129,173);
+      margin: -2px 10px;
+    }
+
+    &:last-of-type {
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  &__selectors {
+    height: 275px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 21px 22px 34px 26px;
+    width: 416px;
+  }
+
+  &__checkbox {
+    &__label {
+      font-size: 14px;
+      line-height: 25px;
+      color: rgb(126,126,126);
+      font-family: $base-font;
+      position: relative;
+    }
+
+    &__label:before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      background: url('../../resources/checkbox_bg.png');
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: -25px;
+    }
+
+    &__input {
+      display: none;
+
+      &:checked + .form__checkbox__label:after {
+        content: "";
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        position: absolute;
+        top: -3px;
+        left: -22px;
+        background: url('../../resources/checkbox_check.png') no-repeat;
+      }
+    }
+  }
+
+  &__submit {
+    @include primary-btn(136px, 35px, 16px);
+  }
+}
+

@@ -1,0 +1,15 @@
+.header {
+  font-family: $base-font;
+  color: rgb(96,96,96);
+  padding: 16px 0 18px;
+  border-bottom: 7px solid #e0e0e0;
+
+  &__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+  }
+}

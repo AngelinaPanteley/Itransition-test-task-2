@@ -1,0 +1,11 @@
+.request-btn {
+  @include primary-btn(321px, 82px, 24px);
+  margin: 202px auto 0;
+}
+
+.loader {
+  width: 32px;
+  height: 32px;
+  background: url('../../resources/ajax-loader.gif');
+  margin: 228px auto 0;
+}

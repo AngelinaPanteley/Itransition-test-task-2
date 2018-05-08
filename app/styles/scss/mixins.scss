@@ -1,0 +1,20 @@
+@mixin primary-btn ($width, $height, $f-size) {
+  width: $width;
+  height: $height;
+  line-height: $height;
+  border-radius: 5px;
+  background-image: linear-gradient(0deg, #1db4da 0%, #1880ac 100%);
+  font-size: $f-size;
+  color: #fff;
+  font-family: $base-font;
+  text-align: center;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  display: block;
+  cursor: pointer;
+
+  &:hover {
+    background-image: linear-gradient(0deg,#21aed2,#156a8e);
+  }
+}

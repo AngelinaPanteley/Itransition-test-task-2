@@ -1,0 +1,35 @@
+block content
+  .wrapper
+    header.header
+      .center-container
+        h1.header__title Front End Test Project
+        h2.header__subtitle by: Angelina Panteley
+
+    div.content.center-container#content
+      button.request-btn#request-btn Request data
+
+  script#step1(type="x-tmpl-mustache")
+    .loader
+
+  script#step2(type="x-tmpl-mustache")
+    h3.content__title
+      | Please select data that you want to display:
+    form.form
+      ul.form__selectors#selectors
+      a.form__link#select-all Select All
+      a.form__link#clear-selection Clear Selection
+      input.form__submit#submit-btn(type="submit", value="Submit")
+
+  script#step3(type="x-tmpl-mustache")
+    .content__header
+      button.back-btn#back-btn
+        span.back-btn__arrow
+        | Select Data
+      h3.content__title
+        | Here is the data that you have requested:
+
+    .table-container
+      table.data-table
+        thead.data-table__head
+          tr#table-head
+        tbody#table-body

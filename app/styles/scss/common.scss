@@ -1,0 +1,29 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  min-height: 100vh;
+}
+
+.center-container {
+  width: 1065px;
+  margin: 0 auto;
+}
+
+.content {
+  padding-top: 20px;
+  font-family: $base-font;
+
+  &__title {
+    font-size: 18px;
+    line-height: 34px;
+    color: rgb(24,129,173);
+  }
+
+  &__header {
+    display: flex;
+  }
+}
